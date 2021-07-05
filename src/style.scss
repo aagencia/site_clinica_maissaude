@@ -1,0 +1,402 @@
+html { 
+    background: url(/src/BG_Clinica.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+
+    p{
+        margin-block: 0;
+    }
+    
+}
+
+body{
+    margin: 0;
+}
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+    position: relative;
+    min-height: 100vh;
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5vh;
+    }
+
+    #left1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 30vw;
+        margin-right: 5vw;
+
+        .logo{
+            max-width: 30vw;
+            margin-bottom: 4vw;
+        }
+
+        p{
+            text-align: left;
+            font-size: 0.8vw;
+        }
+    }
+
+    #right1{
+        .whatsapp{
+            width: 15vw;
+            margin-bottom: 5vw;
+            -webkit-box-shadow: 0px 0px 27px 19px rgba(3,6,158,0.17); 
+            box-shadow: 0px 0px 27px 19px rgba(3,6,158,0.17);
+            border-radius: 20px;
+        }
+        p{
+            max-width: 15vw;
+            font-size: 1vw;
+            font-style: italic;
+            font-weight:bold;
+        }
+    }
+
+    #item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2vw;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        -webkit-box-shadow: 1px 1px 15px 11px rgba(3,6,158,0.1); 
+        box-shadow: 1px 1px 15px 11px rgba(3,6,158,0.1);
+        margin: 5px;
+
+        .title{
+            font-weight: bolder;
+            font-style: italic;
+            margin-bottom: 0.3vw;
+        }
+
+        .price{
+            color: #04079f;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.4vw;
+
+            sup{
+                font-size: 1vw;
+            }
+
+            margin-bottom: 2vw;
+        }
+    }
+
+    .ultra{
+        margin-top: 0 !important;
+
+        .center{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            vertical-align: bottom;
+
+            p{
+                vertical-align: bottom;
+            }
+
+            .price, .title{
+                margin: 0 !important;
+                padding: 0;
+            }
+            .title{
+                padding-right: 1vw;
+                padding-top: 0.4vw;
+                vertical-align: bottom;
+            }
+        }
+    }
+
+    .right{
+        margin-bottom: 2vh;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 200;
+        font-size: 1.5vw;
+        align-self: left;
+        width: 25vw;
+
+        .title{
+            margin-bottom: 1.5vh;
+            color: #04079f;
+            font-weight: bold;
+            font-size: 2vw;
+        }
+
+        .adress{
+            margin-bottom: 3vh;
+        }
+
+        .ref{
+            padding: 8px;
+            text-align: center;
+            margin-bottom: 2vh;
+            font-size: 1.5vh;
+            display: flex;
+            position: relative;
+            flex-direction: row;
+
+            img{
+                width: 12%;
+                pointer-events: none;
+                z-index: 300;
+                position: absolute;
+                left: 0;
+                top: -150%;
+            }
+            p{
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 600;
+                width: 80%;
+                font-size: 1.7vh;
+
+                //
+
+                -webkit-box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.85); 
+                box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.85);
+                padding: 15px;
+                margin: 5px;
+
+            }
+        }
+
+        .numbers{
+            font-size: 1.5vw;
+            align-self: center;
+            margin-top: 3vh;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            img{
+                height: 2vw;
+                width: auto;
+                padding-right: 10px;
+            }
+            .row{
+                margin-bottom: 1vh;
+            }
+        }
+    }
+
+    .space{
+        width: 40vw;
+    }
+
+    .fachada{
+        width: 100vw;
+        position: absolute;
+        bottom: 5vh;
+        z-index: -100;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .footer{
+        width: 100%;
+        background-color: #04079f;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+        a{
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2.5vh;
+                margin-bottom: 2.5vh;
+                width: 10vw;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 720px) {
+    html {
+        background: url(/src/BG_Clinica_Mobile.jpg) no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    #Home{
+        margin-top: 5vh;
+        .row{
+            flex-direction: column;
+            #right1{
+                .whatsapp{
+                    position: fixed;
+                    bottom: 2vh;
+                    right: 4vw;
+                    width: 30vw;
+                    border-radius: 10px;
+                    z-index: 500;
+                    opacity: 0.9;
+                    -webkit-animation: shadow-drop-center 2s linear infinite alternate-reverse both;
+	                animation: shadow-drop-center 2s linear infinite alternate-reverse both;
+                }
+                p{
+                    max-width: 60vw;
+                    font-size: 1.6vh;
+                    margin-bottom: 2vh;
+                }
+            }
+            #left1{
+                max-width: 60vw;
+                margin-bottom: 3vh;
+                .logo{
+                    max-width: 60vw;
+                    margin-bottom: 4vh;
+                }
+                p{
+                    font-size: 1.5vh;
+                }
+            }
+        }
+        #item{
+            width: 60vw;
+            font-size: 2vh;
+            .title{
+                margin: 0;
+            }
+            .price{
+                font-size: 3vh;
+    
+                sup{
+                    font-size: 2vh;
+                }
+    
+                margin-bottom: 2vh !important;
+            }
+        }
+
+        .ultra{
+            .center{
+                flex-direction: column;
+                .title{
+                    margin-bottom: 2vh !important;
+                }
+            }
+        }
+
+        .contact{
+            font-size: 2vh;
+            width: 60vw;
+
+            .row{
+                flex-direction: row;
+            }
+
+            .title{
+                font-size: 2.5vh;
+            }
+
+            .adress{
+                font-weight: 300;
+                font-style: italic;
+            }
+
+            .ref{
+                text-align: center;
+                vertical-align: middle;
+                position: relative;
+                width: 60vw;
+
+                
+                p{
+                    font-size: 1.4vh;
+                }
+
+            }
+
+            .numbers{
+                font-size: 2vh !important;
+                align-self: center;
+                line-height: 2vh;
+                img{
+                    height: 2vh !important;
+                    padding-right: 10px;
+                }
+                a{
+    
+                    
+                    .row{
+                        margin-bottom: 1vh;
+                    }
+                }
+    
+                margin-bottom: 20vh;
+            }
+        }
+    }
+
+    .footer{
+        a{
+            img{
+                width: 20vw !important;
+            }
+        }
+    }
+
+    .mobile{
+        display: flex !important;
+    }
+
+    .desktop{
+       display: none;
+    }
+
+    .space{
+        display: none;
+    }
+
+  }
+
+  @-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 8px 8px rgba(3,6,158,0.17); 
+        box-shadow: 0px 0px 8px 8px rgba(3,6,158,0.17);
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0px 0px 8px 8px rgba(3,6,158,0.17); 
+        box-shadow: 0px 0px 8px 8px rgba(3,6,158,0.17);
+    }
+  }
+  
