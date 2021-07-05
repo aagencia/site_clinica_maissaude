@@ -170,21 +170,21 @@ body {
 }
 
 #Home .contact .title {
-  margin-bottom: 1.5vh;
+  margin-bottom: 2vh;
   color: #04079f;
   font-weight: bold;
   font-size: 2vw;
 }
 
 #Home .contact .adress {
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
+  z-index: 100;
 }
 
 #Home .contact .ref {
   padding: 8px;
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 1.5vh;
+  margin-bottom: 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,8 +215,9 @@ body {
   font-size: 1.7vh;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.85);
   box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.85);
-  padding: 15px;
+  padding: 10px;
   margin: 5px;
+  border-radius: 10px;
 }
 
 #Home .contact .numbers {
@@ -368,7 +369,7 @@ body {
     width: 60vw;
   }
   #Home .contact .ref p {
-    font-size: 1.4vh;
+    font-size: 1.6vh;
   }
   #Home .contact .numbers {
     font-size: 2vh !important;
@@ -387,6 +388,8 @@ body {
   }
   .footer a img {
     width: 20vw !important;
+    margin-top: 1.5vh !important;
+    margin-bottom: 1.5vh !important;
   }
   .mobile {
     display: -webkit-box !important;
